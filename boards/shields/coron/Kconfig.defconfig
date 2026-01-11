@@ -1,7 +1,7 @@
-if SHIELD_PIXI43_R
+if SHIELD_CORON_R
 
 config ZMK_KEYBOARD_NAME
-    default "pixi43_R"
+    default "coron_R"
 
 config ZMK_SPLIT
     default y
@@ -11,10 +11,10 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_PIXI43_L
+if SHIELD_CORON_L
 
 config ZMK_KEYBOARD_NAME
-    default "pixi43_L"
+    default "coron_L"
 
 config ZMK_SPLIT
     default y
