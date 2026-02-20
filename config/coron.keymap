@@ -52,8 +52,19 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&kp RIGHT_BRACKET &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp N4 &kp N1 &kp N3 &kp N8 &kp K>;
             label = "TO_LAYER_0";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&macro_tap>,
+                <&kp N3 &kp LS(U) &kp H &kp LS(U) &kp V &kp LS(S) &kp N9 &kp S>;
+
+            label = "NEW_MACRO";
         };
     };
 
@@ -75,7 +86,7 @@
             bindings = <
 &kp TAB           &kp Q             &kp W         &kp E         &kp R                        &kp T        &kp Y                   &kp U      &lt 5 I      &kp O              &kp P             &kp BACKSPACE
 &kp TAB           &kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))           &kp MINUS  &kp H        &kp J              &kp K             &kp L          &kp LEFT_BRACKET  &kp ENTER
-&kp LEFT_SHIFT    &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp DEL                 &kp PLUS   &kp N        &kp M              &kp COMMA         &kp DOT        &kp SLASH         &kp SEMICOLON
+&kp LEFT_SHIFT    &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp DEL                 &kp PLUS   &kp N        &kp M              &kp COMMA         &kp DOT        &kp SLASH         &kp DOUBLE_QUOTES
 &kp LEFT_CONTROL  &kp LEFT_WIN      &kp LEFT_ALT  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 1 GRAVE  &lt_to_layer_0 3 SPACE  &kp SPACE  &lt 1 GRAVE  &kp RIGHT_BRACKET  &kp LEFT_BRACKET
             >;
 
